@@ -1,4 +1,4 @@
-import { ArrowLeft, Camera } from "phosphor-react";
+import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { FeedbackType, feedbackTypes } from "..";
 import { CloseButton } from "../../CloseButton";
@@ -26,7 +26,7 @@ export function FeedbackContentStep({
       screenshot,
       comment
     })
-    
+
     onFeedbackSent();
   }
   
@@ -47,7 +47,6 @@ export function FeedbackContentStep({
         </span>
         <CloseButton />
       </header>
-
 
       <form onSubmit={handleSubmitFeedback} className="my-4 w-full">
         <textarea 
